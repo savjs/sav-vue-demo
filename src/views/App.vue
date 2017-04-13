@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>{{title}}</title>
-</head>
-<body>
-  
-</body>
-</html>
+<template>
+  <div id="app">
+    <router-view class="view"></router-view>
+  </div>
+</template>
+<script type="text/javascript">
+  export default {
+
+  }
+</script>

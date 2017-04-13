@@ -56,9 +56,10 @@
     "rollup-plugin-re": "^1.0.1",
     "rollup-plugin-vue2": "^0.8.0",
     "sav-flux": "0.0.11",
-    "sav-router": "^1.0.17",
+    "sav-router": "^1.0.18",
     "sav-router-schema": "^1.0.5",
-    "sav-vue": "^1.0.4",
+    "sav-router-view": "^1.0.7",
+    "sav-vue": "^1.0.5",
     "standard": "^9.0.1",
     "watch-cli": "^0.2.1"
   },

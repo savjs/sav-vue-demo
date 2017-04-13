@@ -5,6 +5,8 @@ import {Flux, FluxVue} from 'sav-flux'
 Vue.use(VueRouter)
 Vue.use(FluxVue)
 
+import App from './App.vue'
+
 export default function ({routes}) {
   let router = new VueRouter({
     routes
@@ -12,20 +14,22 @@ export default function ({routes}) {
   let flux = new Flux({
     strict: true // enable this for promise action to resolve data copy
   })
+  if (typeof window !== 'undefined') {
+    if (window.INIT_STATE) {
+      flux.replaceState(window.INIT_STATE)
+    }
+  }
   let vm = new Vue({
     vaf: new FluxVue({
       flux
     }),
     router,
-    template: `
-<div id="app">
-    <router-view class="view"></router-view>
-</div>
-`
+    ...App
   })
   return {
     router,
     vm,
-    flux
+    flux,
+    Vue
   }
 }

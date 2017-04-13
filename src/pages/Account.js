@@ -9,14 +9,18 @@ export class Account {
   @get()
   login () {
     return {
-      title: 'Login View'
+      title: 'Login View',
+      message: 'Welcome to Sign In'
     }
   }
 
   @get()
   register () {
     return {
-      title: 'Register View'
+      title: 'Register View',
+      welcome: {
+        title: 'Welcome to Sign Up'
+      }
     }
   }
 }
