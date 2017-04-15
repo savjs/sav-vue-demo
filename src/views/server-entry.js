@@ -19,10 +19,11 @@ export default function ({routes}) {
       flux.replaceState(window.INIT_STATE)
     }
   }
+  let vaf = new FluxVue({
+    flux
+  })
   let vm = new Vue({
-    vaf: new FluxVue({
-      flux
-    }),
+    vaf,
     router,
     ...App
   })
@@ -30,6 +31,7 @@ export default function ({routes}) {
     router,
     vm,
     flux,
-    Vue
+    Vue,
+    vaf
   }
 }

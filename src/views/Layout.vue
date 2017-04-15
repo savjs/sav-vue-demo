@@ -7,18 +7,34 @@
     </head>
     <body>
       <vue-html></vue-html>
+      <pre>{{cloneRoute($route)}}</pre>
       <vue-init-state></vue-init-state>
     </body>
   </html>
 </template>
 <script type="text/javascript">
-  // import {mapGetters} from 'sav-flux'
+  import {mapGetters} from 'sav-flux'
+  function cloneRoute (to, from) {
+    var clone = {
+      name: to.name,
+      path: to.path,
+      hash: to.hash,
+      query: to.query,
+      params: to.params,
+      fullPath: to.fullPath,
+      meta: to.meta
+    }
+    if (from) {
+      clone.from = cloneRoute(from)
+    }
+    return Object.freeze(clone)
+  }
   export default {
-    created () {
-      console.log('created')
+    computed: {
+      ...mapGetters(['title'])
     },
-    // computed: {
-    //   ...mapGetters(['title'])
-    // }
+    methods: {
+      cloneRoute
+    }
   }
 </script>

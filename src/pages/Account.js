@@ -9,7 +9,7 @@ export class Account {
   @get()
   login () {
     return {
-      title: 'Login View',
+      title: '登录',
       message: 'Welcome to Sign In'
     }
   }
@@ -17,7 +17,7 @@ export class Account {
   @get()
   register () {
     return {
-      title: 'Register View',
+      title: '注册',
       welcome: {
         title: 'Welcome to Sign Up'
       }

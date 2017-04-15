@@ -59,7 +59,7 @@
     "sav-router": "^1.0.18",
     "sav-router-schema": "^1.0.5",
     "sav-router-view": "^1.0.7",
-    "sav-vue": "^1.0.5",
+    "sav-vue": "^1.0.6",
     "standard": "^9.0.1",
     "watch-cli": "^0.2.1"
   },

@@ -12,13 +12,13 @@ export class Home {
   @get('~')
   index () {
     return {
-      title: 'Home View'
+      title: '主页'
     }
   }
   @get()
   about () {
     return {
-      title: 'About View'
+      title: '关于'
     }
   }
 }
