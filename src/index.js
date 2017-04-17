@@ -22,13 +22,13 @@ app.use(staticCache(resolve(__dirname, '../static'), {
 
 app.use(bodyParser())
 
-
 let BUILD_VUE_ROUTER = !!process.env.BUILD_VUE_ROUTER
 
 let router = new Router({
   case: 'camel',
   viewRoot: resolve(__dirname, 'views'),
   vueRoot: resolve(__dirname, 'views'),
+  vueDest: resolve(__dirname, '../static/js'),
   vueLiveCompiled: !BUILD_VUE_ROUTER && process.env.NODE_ENV !== 'production'
 })
 
@@ -43,5 +43,5 @@ export {router}
 
 if (!BUILD_VUE_ROUTER) {
   app.listen(port)
-  console.log(`server: http://localhost:${port}`)  
+  console.log(`server: http://localhost:${port}`)
 }

@@ -9,6 +9,7 @@ import App from './App.vue'
 
 export default function ({routes}) {
   let router = new VueRouter({
+    mode: 'history',
     routes
   })
   let flux = new Flux({

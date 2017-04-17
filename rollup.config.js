@@ -12,8 +12,8 @@ export default {
       externalHelpers: false,
       exclude: 'node_modules/**',
       'plugins': [
-        "transform-decorators-legacy",
-        ['transform-object-rest-spread', { 'useBuiltIns': true }]
+        'transform-decorators-legacy',
+        ['transform-object-rest-spread', {useBuiltIns: true}]
       ]
     })
   ],

@@ -9,6 +9,9 @@
       <vue-html></vue-html>
       <pre>{{cloneRoute($route)}}</pre>
       <vue-init-state></vue-init-state>
+      <script type="text/javascript" src="/js/vue.js"></script>
+      <script type="text/javascript" src="/js/vue-router.js"></script>
+      <!-- <script type="text/javascript" src="/js/client-entry.js"></script> -->
     </body>
   </html>
 </template>

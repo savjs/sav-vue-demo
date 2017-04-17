@@ -1,8 +1,8 @@
 import bootstrap from './server-entry.js'
-import routers from './Routes.js'
+import routes from './Routes.js'
 
 let app = bootstrap({
-  routers
+  routes
 })
 
 app.vm.$mount('#app')

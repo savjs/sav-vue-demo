@@ -39,6 +39,7 @@
     "bulma": "^0.4.0",
     "chai": "^3.5.0",
     "eslint-plugin-standard": "^2.0.1",
+    "eslint-plugin-vue": "^2.0.1",
     "fs-extra": "^2.1.2",
     "handlebars": "^4.0.6",
     "htmling": "0.0.8",
@@ -59,7 +60,7 @@
     "sav-router": "^1.0.18",
     "sav-router-schema": "^1.0.5",
     "sav-router-view": "^1.0.7",
-    "sav-vue": "^1.0.6",
+    "sav-vue": "^1.0.7",
     "standard": "^9.0.1",
     "watch-cli": "^0.2.1"
   },
@@ -68,6 +69,9 @@
   },
   "standard": {
     "parser": "babel-eslint",
+    "plugins": [
+      "vue"
+    ],
     "ignore": [
       "test/fixtures/"
     ]
