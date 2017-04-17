@@ -1,6 +1,6 @@
 {
   "name": "sav-vue-demo",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "sav vue demo",
   "main": "dist/sav-vue-demo.cjs.js",
   "module": "dist/sav-vue-demo.es.js",
@@ -56,7 +56,7 @@
     "rollup-plugin-node-resolve": "^2.0.0",
     "rollup-plugin-re": "^1.0.1",
     "rollup-plugin-vue2": "^0.8.0",
-    "sav-flux": "0.0.11",
+    "sav-flux": "0.0.12",
     "sav-router": "^1.0.18",
     "sav-router-schema": "^1.0.5",
     "sav-router-view": "^1.0.7",

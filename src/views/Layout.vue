@@ -7,11 +7,16 @@
     </head>
     <body>
       <vue-html></vue-html>
-      <pre>{{cloneRoute($route)}}</pre>
       <vue-init-state></vue-init-state>
+      <div>
+        <br>
+        <br>
+        <p>首屏路由-服务端渲染</p>
+        <pre>{{cloneRoute($route)}}</pre>
+      </div>
       <script type="text/javascript" src="/js/vue.js"></script>
       <script type="text/javascript" src="/js/vue-router.js"></script>
-      <!-- <script type="text/javascript" src="/js/client-entry.js"></script> -->
+      <script type="text/javascript" src="/js/client-entry.js"></script>
     </body>
   </html>
 </template>

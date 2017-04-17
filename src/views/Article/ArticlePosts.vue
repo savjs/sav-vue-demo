@@ -5,7 +5,8 @@
       <li v-for="post in posts">
         <router-link :to="{
           name: 'ArticlePost',
-          params: { postId: post.id }
+          params: { postId: post.id },
+          query: {a: post.id}
         }">{{post.title}}</router-link>
       </li>
     </ul>
