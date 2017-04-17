@@ -19,6 +19,9 @@ app.router.beforeEach((to, from, next) => {
     } else {
       app.flux.updateState(data).then(() => {
         next()
+        if (data.title) {
+          document.title = data.title
+        }
       })
     }
   })
