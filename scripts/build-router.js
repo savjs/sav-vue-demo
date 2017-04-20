@@ -10,10 +10,9 @@ process.env.BUILD_VUE_ROUTER = true
 let {router} = require('../src')
 
 Promise.all(router.getVueRenders().map((render) => {
-  return render.compileVueClient({
+  return render.saveVueRouter().then( () => render.compileVueClient({
     dest: true
-  })
-  // return render.saveVueRouter()
+  }))
 })).then(()=>{
   console.log('success')
 })
