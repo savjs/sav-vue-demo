@@ -1,7 +1,7 @@
 <template>
   <div>
     <h4>{{title}}</h4>
-    <sav-form :to="{name: 'ArticleUpdate', params: {id: post.id}}" :data="post">
+    <sav-form method="POST" :to="{name: 'ArticleUpdate', params: {id: post.id}}" :data="post">
       <label>
         <span>标题</span>
         <input type="text" v-model="post.title">
