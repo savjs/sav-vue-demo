@@ -7,6 +7,9 @@ let app = bootstrap({
 })
 
 app.router.beforeEach((to, from, next) => {
+  if (app.hotReplace) {
+    return
+  }
   if (!to.name) {
     return next()
   }
